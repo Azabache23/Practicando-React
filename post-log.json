@@ -1,0 +1,20 @@
+{
+  "session_id": "00339f6b-588a-4357-be66-c213fa781bf4",
+  "transcript_path": "C:\\Users\\practicasdesarrollo2\\.claude\\projects\\C--Users-practicasdesarrollo2-Proyecto-React\\00339f6b-588a-4357-be66-c213fa781bf4.jsonl",
+  "cwd": "C:\\Users\\practicasdesarrollo2\\Proyecto React",
+  "permission_mode": "acceptEdits",
+  "hook_event_name": "PostToolUse",
+  "tool_name": "Bash",
+  "tool_input": {
+    "command": "echo \"=== 3. POST válido ===\" && curl -s -w \"\\nHTTP %{http_code}\" -X POST http://localhost:8080/api/clientes -H \"Content-Type: application/json\" -d '{\"nombre\":\"Ana López\",\"ubicacion\":\"Madrid\",\"nif\":\"12345678A\"}' && echo \"\"",
+    "description": "Test POST valid client"
+  },
+  "tool_response": {
+    "stdout": "=== 3. POST válido ===\n{\"ubicacion\":\"Madrid\",\"nif\":\"12345678A\",\"id\":\"1b0ec188-5511-4571-a429-307970ab8644\",\"nombre\":\"Ana L�pez\"}\nHTTP 201",
+    "stderr": "",
+    "interrupted": false,
+    "isImage": false,
+    "noOutputExpected": false
+  },
+  "tool_use_id": "toolu_013AbsCDbAbzcwHG4N2SJAxr"
+}
