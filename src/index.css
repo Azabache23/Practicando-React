@@ -1,1 +1,68 @@
 @import "tailwindcss";
+
+@theme 
+{
+  /* Colores personalizados del diseño de GoogleStitch */
+  --color-primary: #137fec;
+  --color-background-light: #f6f7f8;
+  --color-background-dark: #101922;
+
+  /* Tipografía */
+  --font-display: "Inter", ui-sans-serif, system-ui;
+
+  /* Radios de borde */
+  --radius-default: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+}
+
+/* Configuración para el modo oscuro */
+@custom-variant dark (&:where(.dark, .dark *));
+
+body 
+{
+  background-color: #95e1ee;
+}
+
+.titulo
+{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    justify-self: center;
+}
+
+@layer components 
+{
+    .tabla-clientes
+    {
+        @apply w-full text-left border-collapse rounded-xl overflow-hidden shadow-md;
+    }
+
+    .tabla-clientes thead
+    {
+        @apply bg-indigo-600 text-white uppercase text-sm;
+    }
+
+    .tabla-clientes th, .tabla-clientes td 
+    {
+        @apply p-4 border-b border-gray-100;
+    }
+
+    .tabla-clientes tr:hover
+    {
+        @apply bg-indigo-50 transition-colors duration-200;
+    }
+
+    .tabla-clientes tr:last-child td
+    {
+        @apply border border-b-0;
+    }
+
+    .tabla-clientes td:last-child 
+    {
+        @apply flex items-center gap-5;
+    }
+}

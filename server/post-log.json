@@ -1,0 +1,25 @@
+{
+  "session_id": "b3ef5ff5-116c-4ec4-b43e-7fca47f3a261",
+  "transcript_path": "C:\\Users\\practicasdesarrollo2\\.claude\\projects\\C--Users-practicasdesarrollo2-Proyecto-React\\b3ef5ff5-116c-4ec4-b43e-7fca47f3a261.jsonl",
+  "cwd": "C:\\Users\\practicasdesarrollo2\\Proyecto React\\server",
+  "permission_mode": "acceptEdits",
+  "hook_event_name": "PostToolUse",
+  "tool_name": "TaskOutput",
+  "tool_input": {
+    "task_id": "by51s52jx",
+    "block": true,
+    "timeout": 8000
+  },
+  "tool_response": {
+    "retrieval_status": "timeout",
+    "task": {
+      "task_id": "by51s52jx",
+      "task_type": "local_bash",
+      "status": "running",
+      "description": "Start Java server",
+      "output": "Tabla 'usuarios' inicializada en 'usuarios_API'\r\nTabla 'clientes' inicializada en 'clientes_app'\r\n2 contrase�a(s) migrada(s) a PBKDF2\r\nServidor iniciado en http://localhost:8080\r\n",
+      "exitCode": null
+    }
+  },
+  "tool_use_id": "toolu_01QQgtBTu5yMV5oZRioB2iE6"
+}
